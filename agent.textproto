@@ -1,0 +1,10 @@
+name: "qa-temperature-assistant"
+step {
+  id: "assistant"
+  agent {
+    prompt: "Use QaConvertTemperature to convert the user's temperature from Celsius to Fahrenheit. Report the tool result with units and the build value. Never invent a missing tool result. Finish with final_answer."
+    tool { tool_name: "QaConvertTemperature" }
+    tool { tool_name: "final_answer" exit_loop: true }
+    max_iterations: 4
+  }
+}
