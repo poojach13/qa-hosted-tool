@@ -1,0 +1,1 @@
+trase-os-sdk @ git+https://github.com/TraseSystems/trase-os-sdk.git@v1.0.0#subdirectory=python
